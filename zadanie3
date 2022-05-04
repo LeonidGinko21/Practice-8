@@ -1,0 +1,34 @@
+#include "iostream"
+using namespace std;
+int main()
+{
+    int k, m, i, j, a[10][10], b[10][10];
+    cout << "Enter number of lines:\n";
+    cin >> k;
+    cout << "Enter number of columns:\n";
+    cin >> m;
+    cout << endl << "Enter numbers of first matrix: " << endl;
+
+    for(i = 0; i < k; ++i)
+        for(j = 0; j < m; ++j)
+        {
+            cout << "Enter element a" << i + 1 << j + 1 << ": ";
+            cin >> a[i][j];
+
+        }
+    for(i = 0; i < k; ++i){
+        for(j = 0; j < m; ++j)
+            cout << a[i][j] << " ";
+    }
+
+    for(i = 0; i < k; ++i){
+        for(j = 0; j < m; ++j)
+            b[i][j] = a[j][i];
+        }
+    for(i = 0; i < k; ++i){
+        for(j = 0; j < m; ++j)
+            cout << b[i][j] << " ";
+    }
+    
+            return 0;
+}
