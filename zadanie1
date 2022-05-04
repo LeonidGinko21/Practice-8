@@ -1,0 +1,44 @@
+#include <iostream>
+using namespace std;
+
+class matrix
+{
+private:
+int matrix[3][3];
+int a,b;
+
+public:
+
+void getdate()
+    {
+    
+for (int i=0; i<5; i++)
+for (int j=0; j<5; j++)
+matrix[i][j]=rand() %10;
+    
+    };
+
+void putdate()
+    {
+cout << "Enter number of lines:\n";
+cin >> a;
+cout << "Enter number of columns:\n";
+cin >> b;
+for (int i=0; i<a; i++)
+        {
+for (int j=0; j<b; j++)
+cout<<matrix[i][j]<<" ";
+cout<<endl;}
+    };
+
+};
+
+
+int main()
+{
+    matrix mat;
+    matrix.getdate();
+    matrix.putdate();
+
+    return 0;
+}
